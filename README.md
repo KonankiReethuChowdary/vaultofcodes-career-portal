@@ -82,7 +82,7 @@ sheet/tab → format **Comma-separated values (.csv)** → **Publish**.
 Copy the generated URL. It looks like:
 
 ```
-https://docs.google.com/spreadsheets/d/e/2PACX-xxxxxxxxxxxxxxxxxxxx/pub?output=csv
+https://docs.google.com/spreadsheets/d/e/2PACX-1vQUUAJGinPgv13kbT6h6FfxxjjXoXfQyI2W1uJKUpUaO0Nyh-HO5zAAD_3awlVOJo7PTJT7Aw_M1O3e/pub?output=csv
 ```
 
 ### 3. Point the site at it
