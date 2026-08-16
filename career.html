@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Careers at VaultofCodes — Jobs & Internships</title>
+<meta name="description" content="Browse live jobs and internships at VaultofCodes, sourced directly from our hiring sheet and updated continuously.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/career.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-nav">
+  <div class="container">
+    <a href="index.html" class="brand"><span class="brand-mark">&lt;/&gt;</span> VaultofCodes</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">About</a>
+      <a href="index.html#what-we-do">Courses</a>
+      <a href="index.html#team">Team</a>
+      <a href="career.html" class="active">Careers</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="index.html" class="btn btn-ghost btn-sm">About us</a>
+      <a href="#control-bar" class="btn btn-primary btn-sm">Browse roles</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-panel" aria-hidden="true">
+    <a href="index.html">About</a>
+    <a href="index.html#what-we-do">Courses</a>
+    <a href="index.html#team">Team</a>
+    <a href="career.html">Careers</a>
+    <a href="#control-bar" class="btn btn-primary btn-block">Browse roles</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="career-hero">
+    <div class="container">
+      <span class="eyebrow">Career portal</span>
+      <h1>Build your career<br>with VaultofCodes.</h1>
+      <p class="career-hero-sub">Live jobs and internships from our hiring partners — pulled straight from our hiring sheet, so what you see here is always current.</p>
+      <div class="career-hero-stats">
+        <div><strong id="stat-total">—</strong><span>Open roles</span></div>
+        <div><strong id="stat-jobs">—</strong><span>Full-time jobs</span></div>
+        <div><strong id="stat-internships">—</strong><span>Internships</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="control-bar" class="control-bar">
+    <div class="container">
+      <div class="control-row">
+        <div class="search-box">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="search" id="search-input" placeholder="Search by title, skill, or department…" aria-label="Search opportunities">
+        </div>
+        <button class="btn btn-ghost btn-sm filter-toggle-btn" id="filter-toggle-btn">Filters</button>
+      </div>
+      <div class="filters-row" id="filters-row">
+        <div class="select-field"><select id="filter-department" aria-label="Filter by department"><option value="">Department: All</option></select></div>
+        <div class="select-field"><select id="filter-mode" aria-label="Filter by work mode"><option value="">Work mode: All</option></select></div>
+        <div class="select-field"><select id="filter-location" aria-label="Filter by location"><option value="">Location: All</option></select></div>
+        <button class="clear-filters" id="clear-filters">Clear all</button>
+      </div>
+      <div class="tab-row" id="tab-row">
+        <button class="tab-btn active" data-tab="all">All opportunities <span class="count">—</span></button>
+        <button class="tab-btn" data-tab="job">Jobs <span class="count">—</span></button>
+        <button class="tab-btn" data-tab="internship">Internships <span class="count">—</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+
+      <div class="results-meta" id="results-meta" style="display:none;">
+        <div class="results-count" id="results-count"></div>
+        <div class="sort-field">
+          <select id="sort-select" aria-label="Sort opportunities">
+            <option value="newest">Sort: Newest first</option>
+            <option value="deadline">Sort: Deadline soonest</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="skeleton-grid" id="skeleton-grid" aria-hidden="true">
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+      </div>
+
+      <div class="listing-grid" id="listing-grid" style="display:none;" aria-live="polite"></div>
+
+      <div class="state-block" id="state-block" style="display:none;"></div>
+
+      <div class="pagination" id="pagination"></div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="cta-band" style="background:var(--ink); border-radius:var(--radius-lg); padding:56px 40px; text-align:center;">
+        <h2 style="color:#fff;">Don't see the right fit yet?</h2>
+        <p style="color:rgba(255,255,255,0.75); max-width:480px; margin:0 auto 8px;">New roles are added to our hiring sheet every week. Check back soon, or reach out directly.</p>
+        <a href="mailto:careers@vaultofcodes.example" class="btn btn-accent" style="margin-top:16px;">Email our team</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><span class="brand-mark">&lt;/&gt;</span> VaultofCodes</a>
+        <p>Practical technology education for college students — courses, internships and workshops built by working engineers.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="index.html">About us</a>
+        <a href="index.html#what-we-do">What we do</a>
+        <a href="index.html#team">Team</a>
+      </div>
+      <div class="footer-col">
+        <h4>Careers</h4>
+        <a href="career.html">All openings</a>
+        <a href="career.html">Internships</a>
+        <a href="career.html">Jobs</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <span>hello@vaultofcodes.example</span>
+        <span>Chennai, India</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 VaultofCodes. Dummy content for assignment purposes.</span>
+      <div class="social-row">
+        <a href="#" aria-label="LinkedIn">in</a>
+        <a href="#" aria-label="Instagram">ig</a>
+        <a href="#" aria-label="X">x</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Details modal -->
+<div class="modal-overlay" id="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Opportunity details">
+  <div class="modal-panel">
+    <button class="modal-close" onclick="closeCareerModal()" aria-label="Close details">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/main.js"></script>
+<script src="js/config.js"></script>
+<script src="js/career.js"></script>
+</body>
+</html>
