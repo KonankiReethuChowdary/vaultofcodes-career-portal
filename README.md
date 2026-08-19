@@ -91,7 +91,7 @@ Open `js/config.js` and paste the URL:
 
 ```js
 window.CAREER_CONFIG = {
-  SHEET_CSV_URL: 'https://docs.google.com/spreadsheets/d/e/2PACX-xxxx/pub?output=csv',
+  SHEET_CSV_URL: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQUUAJGinPgv13kbT6h6FfxxjjXoXfQyI2W1uJKUpUaO0Nyh-HO5zAAD_3awlVOJo7PTJT7Aw_M1O3e/pub?output=csv',,
   ...
 };
 ```
